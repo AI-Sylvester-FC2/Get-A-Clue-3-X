@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-export default function InputAndAiStory {
+export default function InputAndAiStory () {
 // useState: storyDisplay, updateStoryDisplay - button, updateButton - input, updateInput - clearButton, updateClearButton
 
 // onSubmitHandler - submitting user input
