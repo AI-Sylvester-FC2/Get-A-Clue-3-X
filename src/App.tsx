@@ -10,7 +10,6 @@ export default function App() {
     <>
      <h1>Clue Game</h1>
       <InputAndAiStory />
-      < CharacterBox />
      <hr></hr>
      <p className="check-instructions">Check off suspects, rooms, and weapons as you determine they are not elements of the crime</p>
      <span className="checkboxes">
