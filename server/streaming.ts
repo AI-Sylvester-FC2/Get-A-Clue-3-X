@@ -1,7 +1,7 @@
-import ollama from 'ollama'
+import Ollama from 'ollama'
 
 async function main() {
-  const stream = await ollama.chat({
+  const stream = await Ollama.chat({
     model: 'qwen3',
     messages: [{ role: 'user', content: 'What is 17 × 23?' }],
     stream: true,
@@ -32,7 +32,7 @@ async function main() {
   }
 
   // append the accumulated fields to the messages for the next request
-  new_messages = [{ role: 'assistant', thinking: thinking, content: content }]
+  const new_messages = [{ role: 'assistant', thinking: thinking, content: content }]
 }
 
 main().catch(console.error)
