@@ -7,14 +7,21 @@
         "client": "vite",
         "server": "tsx server/server.ts",
         "start": "concurrently \"npm run client\" \"npm run server\"",
-        "build": "vite build"
+        "build": "vite build",
+        "claude": "ts-node src/claud.ts",
+        "openai": "ts-node src/openai.ts",
+        "ollama": "ts-node src/ollama.ts"
     },
     "dependencies": {
+        "@types/react-dom": "^19.2.3",
         "concurrently": "^9.2.1",
         "cors": "^2.8.5",
         "express": "^5.2.1",
+        "ollama": "^0.6.3",
+        "openai": "^6.16.0",
         "react": "^19.2.3",
-        "react-dom": "^19.2.3"
+        "react-dom": "^19.2.3",
+        "globals":"17.0.0"
     },
     "devDependencies": {
         "@types/cors": "^2.8.19",

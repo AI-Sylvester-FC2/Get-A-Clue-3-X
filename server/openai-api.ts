@@ -1,3 +1,5 @@
+import 'dotenv/config';
+import Ollama from 'ollama';
 import OpenAI from 'openai';
 import { LLMClient, LLMOptions } from './llm-client';
 
