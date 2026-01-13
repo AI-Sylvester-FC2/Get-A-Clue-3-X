@@ -8,7 +8,7 @@ import "./App.css"
 export default function App() {
   return (
     <>
-     <h1>Get A Clue!</h1>
+     <h1 className="gameTitle">Get A Clue!</h1>
       <InputAndAiStory />
      <hr></hr>
      <p className="check-instructions">Check off suspects, rooms, and weapons as you determine they are not elements of the crime</p>
