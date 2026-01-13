@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 //this is from our ai-1sb-prompts-send-prompt.ts
 //import { OpenAIClient } from './openai-api';
+import ollama from 'ollama';
+import { ClaudeClient } from './claude-api';
 import { LLMClient } from './llm-client';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
@@ -9,8 +11,8 @@ import * as fs from 'fs';
 dotenv.config();
 
 // get API keys
-//const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
-//const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OLLAMA_API_KEY = process.env.OLLAMA_API_KEY;
 
 
@@ -96,10 +98,6 @@ async function main() {
                 console.error('OLLAMA_API_KEY=your_api_key_here');
                 process.exit(1);
             }
-            client = new OllamaClient({
-                apiKey: OLLAMA_API_KEY
-            });
-            break;
       
       default:
         console.error(`Error: Unsupported provider: ${provider}`);
