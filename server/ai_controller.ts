@@ -1,21 +1,33 @@
-//import { RequestHandler } from 'express';
-//import {}
-import { Ollama } from 'ollama'
+//import OpenAI SDK, also need to install openai package before using
+//
+import dotenv from 'dotenv';
+dotenv.config();
+
+import { Ollama } from "ollama";
 
 const ollama = new Ollama({
-  host: 'https://ollama.com',
-  headers: { Authorization: 'Bearer ' + process.env.OLLAMA_API_KEY },
-})
+  host: "https://ollama.com",
+  headers: {
+    Authorization: "Bearer " + process.env.OLLAMA_API_KEY,
+  },
+});
 
 const response = await ollama.chat({
-  model: 'gpt-oss:120b',
-  messages: [{ role: 'user', content: 'Explain quantum computing' }],
+  model: "gpt-oss:120b",
+  messages: [{ role: "user", content: "Explain quantum computing" }],
   stream: true,
-})
+});
 
 for await (const part of response) {
-  process.stdout.write(part.message.content)
+  process.stdout.write(part.message.content);
 }
+
+
+
+// The following is an example of a custom OpenAI client class that could be used in a larger application.
+// It is commented out to avoid redundancy since the above code demonstrates basic usage.
+
+
 // import OpenAI from 'openai';
 // import { LLMClient, LLMOptions } from './llm-client';
 

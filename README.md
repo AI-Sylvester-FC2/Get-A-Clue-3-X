@@ -1,10 +1,9 @@
 # Get-A-Clue-3-X
 OpenAI using Ollama- will act as a placekeeper for any ai agent you choose to install later. Documentation can be found here https://docs.ollama.com/cloud#javascript
-  1. sign in or create an account at ollama.com then in your terminal 
- to get your api key
+  1. sign in or create an account at ollama.com to get your api key
   2. install openai to allow us to fake ollama into the openai slot
      npm install openai
-  3. 
+  3. then you can build out your app using openai sdk documentation can be found here: https://platform.openai.com/docs/quickstart#page-top
 
 1. [x] Create a repo to store work and test commits
 2. [x] Manually Create index.html and styles.css files
