@@ -1,1 +1,25 @@
-{"type":"module","main":"server.ts","scripts":{"test":"echo \"Error: no test specified\" && exit 1","client":"vite","server":"node server.ts","start":"concurrently \"npm run client\" \"npm run server\"","build":"vite build"},"dependencies":{"concurrently":"^9.2.1","express":"^5.2.1","ollama":"^0.6.3","openai":"^6.16.0","react":"^19.2.3","react-dom":"^19.2.3"},"devDependencies":{"@types/dotenv":"^6.1.1","@types/express":"^5.0.6","@vitejs/plugin-react":"^5.1.2","typescript":"^5.9.3"}}
+{
+    "name": "get_a_clue",
+    "version": "1.0.0",
+    "main": "server.ts",
+    "scripts": {
+        "client": "vite",
+        "server": "tsx server.ts",
+        "start": "concurrently \"npm run client\" \"npm run server\"",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "concurrently": "^9.2.1",
+        "express": "^5.2.1",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.6",
+        "@types/react": "^19.2.8",
+        "@vitejs/plugin-react": "^5.1.2",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    }
+}
