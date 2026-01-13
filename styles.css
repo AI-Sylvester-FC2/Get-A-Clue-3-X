@@ -1,0 +1,36 @@
+/* InputAndAiStory Elements */
+
+.ai-story-box {
+  border-color: black;
+  border-radius:10px;
+  width:400px;
+  height: 100px;
+  margin-bottom: 20px;
+  font-size: 16px;
+
+}
+
+/* .inputAndAiStory {
+  display: flex;
+  justify-content: center;
+} */
+.story-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.guess-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.guess-input {
+  border-color: black;
+  border-radius:10px;
+  width:200px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.submit-button {
+  border-radius: 5px;
+}
