@@ -1,7 +1,7 @@
-import ollama from 'ollama'
+import Ollama from 'ollama'
 
 async function main() {
-  const stream = await ollama.chat({
+  const stream = await Ollama.chat({
     model: 'qwen3',
     messages: [{ role: 'user', content: 'What is 17 × 23?' }],
     stream: true,
