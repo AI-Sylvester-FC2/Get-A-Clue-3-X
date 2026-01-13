@@ -32,7 +32,7 @@ async function main() {
   }
 
   // append the accumulated fields to the messages for the next request
-  new_messages = [{ role: 'assistant', thinking: thinking, content: content }]
+  const new_messages = [{ role: 'assistant', thinking: thinking, content: content }]
 }
 
 main().catch(console.error)
