@@ -10,10 +10,21 @@
 
 }
 
-/* .inputAndAiStory {
+.gameTitle {
   display: flex;
   justify-content: center;
-} */
+}
+
+.aiStory {
+  display: flex;
+  justify-content: center;
+}
+
+.guess-container {
+  display: flex;
+  justify-content: center;
+}
+
 .story-label {
   font-size: 20px;
   font-weight: 600;
@@ -33,4 +44,12 @@
 }
 .submit-button {
   border-radius: 5px;
+  display:flex;
+  justify-content: center;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
