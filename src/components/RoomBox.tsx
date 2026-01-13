@@ -42,7 +42,7 @@ export default function RoomBox() {
 
   return (
     <div>
-      <h3>Select rooms where the crime did not happen</h3>
+      <h3>Where?</h3>
       {rooms.map((room) => (
         <div key={room.id}>
           <label>

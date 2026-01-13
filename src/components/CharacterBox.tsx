@@ -12,9 +12,6 @@ const characters = [
   {id: 4, name: "Miss Scarlet"},
   {id: 5, name: "Mrs Peacock"},
   {id: 6, name: "Mrs White"},
-  {id: 7, name: "Miss Peach"},
-  {id: 8, name: "Captain Brown"},
-  {id: 9, name: "Mr Slate-Grey"}
 ]
 export default function CharacterBox() {
   //useState: selectedCharacters, updateSelectedCharacters
@@ -46,7 +43,7 @@ export default function CharacterBox() {
 
     return (
       <div>
-        <h3>Select Characters who are not suspects</h3>
+        <h3>Who?</h3>
         {characters.map((character) => (
           <div key={character.id}>
             <label>
